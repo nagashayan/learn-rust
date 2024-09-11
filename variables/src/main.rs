@@ -1,3 +1,5 @@
+mod exercise;
+
 fn main() {
     let mut x = 5;
     println!("The value of x is: {x}");
@@ -25,5 +27,6 @@ fn main() {
     let _a = [1, 2, 3];
     let _b: [i32; 5] = [1, 2, 3, 4, 5];
     let c = [3; 5]; // [3,3,3,3,3]
-    print("The value of c.2 {c[2]}");
+    println!("The value of c.2: {0}", { c[2] });
+    exercise::print_index();
 }
